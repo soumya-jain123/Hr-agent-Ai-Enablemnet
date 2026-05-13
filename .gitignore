@@ -1,0 +1,27 @@
+# Environment – NEVER commit real credentials
+.env
+*.env.local
+
+# Dependencies
+node_modules/
+
+# Build output
+client/dist/
+client/build/
+
+# Uploaded resume files (contain PII)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+
+# MongoDB local data
+data/
